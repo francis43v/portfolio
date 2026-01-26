@@ -279,7 +279,7 @@ header{background: #fff; padding: 0 25px;}
 		.project_boxes section .project_info { padding:   20px  0; display: flex; justify-content: space-between; gap: 20px; font-weight: bold; }
 		.project_boxes section .project_info h3 {  } 
 		
-		.project_boxes section .project_info p {  } 
+		.project_boxes section .project_info p { max-width: fit-content; } 
 
 		.project_boxes section a { position: absolute;  inset: 0; z-index: 2; }
 
