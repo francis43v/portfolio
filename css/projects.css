@@ -1,0 +1,14 @@
+ 
+
+
+ #banner, 
+ #middle,
+ #bottom1,
+ #bottom2  { padding: 0 ; }
+
+
+
+.bnr_con,
+.middle_con,
+.btm1_con {min-height: 0; padding:   0   ; display: block;} 
+ 
