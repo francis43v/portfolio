@@ -64,7 +64,7 @@ $(document).ready(function(){
 		$('.toggle_right_nav').addClass('toggle_right_cont');
 		$(".nav_toggle_button").toggleClass('active');
 		$(".hamburger").toggleClass("is-active");
-		$('body').addClass('active');
+		// $('body').addClass('active');
 	});
 
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
 		$('.toggle_right_nav').removeClass('toggle_right_cont');
 		$(".nav_toggle_button").removeClass('active');
 		$(".hamburger").removeClass("is-active");
-		$('body').removeClass('active');
+		// $('body').removeClass('active');
 	});
 
 	// Swap Elements
