@@ -113,7 +113,7 @@ header{background: #fff; padding: 0 25px;}
 	.main_logo img{}
 
 
-	.main_logo h3 { position: absolute; left: 0; top: 28px; font-family: var(--priFont); font-size: 1.3em; font-weight: 700; color: var(--secColor); line-height: 100%; }
+	.main_logo h3 { position: absolute; left: 0; top: 28px; font-family: var(--priFont); font-size: 1.3rem; font-weight: 700; color: var(--secColor); line-height: 100%; }
 
 
 	.head_info{   }
@@ -191,7 +191,7 @@ header{background: #fff; padding: 0 25px;}
 	.mobi_ban{display: none;}
 
 	.bnr_info_con {  max-width: 45%;    }
-	.bnr_info h1{color: var(--priColor); font-size: 3em;  font-weight: bold; line-height: 100%; }
+	.bnr_info h1{color: var(--priColor); font-size: 3rem;  font-weight: bold; line-height: 100%; }
 	.bnr_info h1 small{}
 	.bnr_info h1 span{display: block;  }
 	.bnr_info p{line-height: 26px; margin: 50px 0  ;}
@@ -206,8 +206,8 @@ header{background: #fff; padding: 0 25px;}
     .social_links ul li a{display: block;   }
     .social_links ul li a:hover img{opacity: 0.5; transition: .5s ease;  }
 
-	.bnr_profile { position: relative; border-radius: 50vw; background: var(--priColor); max-width: 50%; display: grid; place-content: end center  ;  overflow: hidden; }
-	.bnr_profile img { max-width: fit-content; margin: 0 auto; width: 100%;    object-position: -50px; }
+	.bnr_profile { position: relative; border-radius: 150px; background: var(--priColor); max-width: 50%; display: grid; place-content: end center  ;  overflow: hidden; }
+	.bnr_profile img { max-width: fit-content; margin: 0 auto; width: 100%;  object-fit: contain;   object-position: 40px; }
 
 
 
@@ -221,7 +221,7 @@ header{background: #fff; padding: 0 25px;}
 	.middle_con{min-height: 0; padding: 150px 0 200px;}
 
 	.mid_info{ text-align: center; margin-bottom: 150px; }
-	.mid_info h2{ color: var(--priColor); font-size: 2.5em;  font-weight: bold; line-height: 100%; }
+	.mid_info h2{ color: var(--priColor); font-size: 2.5rem;  font-weight: bold; line-height: 100%; }
 	.mid_info h2 small{}
 	.mid_info h2 span{}
 	.mid_info p{}
@@ -265,7 +265,7 @@ header{background: #fff; padding: 0 25px;}
 		main{   }
 
 		.main_heading { text-align: center; }
-		.main_heading h2 { font-weight: bold;  font-size: 2.5em; color: var(--priColor); }
+		.main_heading h2 { font-weight: bold;  font-size: 2.5rem; color: var(--priColor); }
 		
 
 
@@ -305,7 +305,7 @@ header{background: #fff; padding: 0 25px;}
 	
 
 		.btm1_info { text-align: center; margin-bottom: 200px; }
-		.btm1_info h2 { color: #fff; font-size: 2.5em; font-weight: bold; line-height: 100%; }
+		.btm1_info h2 { color: #fff; font-size: 2.5rem; font-weight: bold; line-height: 100%; }
 
 
  
@@ -313,7 +313,7 @@ header{background: #fff; padding: 0 25px;}
 		.tabs { display: flex; justify-content: space-between; } 
 
 		.tabs-nav { display: flex; flex-direction: column; gap: 20px;  width: 30%; } 
-		.tabs-btn { background: none; border: none; padding: 15px 20px 20px  ; cursor: pointer; font-weight: 500; color: #ffffff7a; position: relative; display: block;  width: 100%; font-size: 1.5em;    } 
+		.tabs-btn { background: none; border: none; padding: 15px 20px 20px  ; cursor: pointer; font-weight: 500; color: #ffffff7a; position: relative; display: block;  width: 100%; font-size: 1.5rem;    } 
 
 		.tabs-btn::after { content: '';  position: absolute; height: 3px; background: #fff; left: 0; right: 0; bottom: 0; margin: 0 auto;  width: 0%; }
 
@@ -331,10 +331,29 @@ header{background: #fff; padding: 0 25px;}
 
 		.skill-info figure { max-width: 600px; width: 100%; margin: 0 auto 40px; } 
 		
-		.skill-info p { color: #fff; font-size: 1.2em; }
+		.skill-info p { color: #fff; font-size: 1.2rem; }
  
 
 
+
+
+.achievements { padding: 0 25px; background: #fff; }
+	.achievements_con{ padding: 150px 0 90px; }
+
+
+			.achievements_info { text-align: center;  }
+
+
+			.achievements_info h2 {  font-size: 2.5rem; font-weight: bold; line-height: 100%; margin: 0 auto 60px; }
+
+
+
+			.achievements_info ul { display: flex; justify-content: space-evenly; gap: 20px; flex-wrap: wrap; }
+			.achievements_info ul li { font-weight: bold; text-align: center; position: relative;}
+			.achievements_info ul li span { font-size: 1.3rem; color: var(--priColor); }
+			.achievements_info a { margin: 90px auto 0; }
+
+			.achievements_info ul li::before { content: ''; background: url(images/icons/medal.png) no-repeat center / contain ; display: block; max-width: 80px; width: 100%; aspect-ratio: 1/1; margin: 0 auto 15px; }
 
 
 
@@ -359,13 +378,13 @@ header{background: #fff; padding: 0 25px;}
 	.contact-form textarea::placeholder { color: #ccc; }
 
 	.contact-form input, 
-	.contact-form textarea { padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; transition: border-color 0.3s; width: 100%; box-sizing: border-box; } 
+	.contact-form textarea { padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; transition: border-color 0.3s; width: 100%; box-sizing: border-box; font-family: var(--priFont); } 
 
 	.contact-form input:focus, 
 	.contact-form textarea:focus { outline: none; border-color: var(--priColor); }
 	
 	
-	.contact-form button { padding: 12px; border: none; border-radius: 5px; background-color: var(--priColor); color: #fff; font-size: 1.2rem; text-transform: uppercase; cursor: pointer; transition: background-color 0.3s; } 
+	.contact-form button { padding: 12px; border: none; border-radius: 5px; background-color: var(--priColor); color: #fff; font-size: 1.2rem; text-transform: uppercase; cursor: pointer; transition: background-color 0.3s; font-family: var(--priFont); } 
 	.contact-form button:hover { background-color: var(--secColor); }
 
 
@@ -392,6 +411,9 @@ footer{    }
 
 		.footer_info { margin-left: auto; max-width: 600px; width: 40%; }
 
+		.footer_info h2 { font-size: 2.2rem; font-weight: bold; line-height: 100%; }
+		.footer_info p { margin: 20px 0 ; }
+
 		.footer_info ul { display: flex; flex-direction: column; gap: 15px; }
 		.footer_info ul li { position: relative;  padding-left: 50px; }
 		.footer_info ul li address { }
@@ -405,7 +427,7 @@ footer{    }
 
 
 		#back_top_btn { display: inline-block; background-color: var(--priColor); width: 50px; height: 50px; text-align: center;  position: fixed; bottom: 30px; right: 30px; transition: background-color .3s, opacity .5s, visibility .5s; opacity: 0; visibility: hidden; z-index: 1000; } 
-		#back_top_btn::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 2em; line-height: 50px; color: #fff; } 
+		#back_top_btn::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 2rem; line-height: 50px; color: #fff; } 
 		#back_top_btn:hover { cursor: pointer; background-color: #333; } 
 		#back_top_btn:active { background-color: #555; } 
 		#back_top_btn.show { opacity: 1; visibility: visible; }
