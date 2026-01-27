@@ -207,7 +207,7 @@ header{background: #fff; padding: 0 25px;}
     .social_links ul li a:hover img{opacity: 0.5; transition: .5s ease;  }
 
 	.bnr_profile { position: relative; border-radius: 150px; background: var(--priColor); max-width: 50%; display: grid; place-content: end center  ;  overflow: hidden; }
-	.bnr_profile img { max-width: fit-content; margin: 0 auto; width: 100%;  object-fit: contain;   object-position: 40px; }
+	.bnr_profile img { max-width: fit-content; margin: 0 auto; width: 100%;  object-fit: contain;   object-position: 40px;   filter: saturate(1.5); }
 
 
 

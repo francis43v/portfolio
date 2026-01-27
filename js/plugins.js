@@ -81,15 +81,15 @@ $(document).ready(function(){
 	// Swap Elements
 	function swap_this(){
 		if(window_width <= 800){
-			// $('.main_logo').insertAfter('.logo_wrap');
+			$('.main_logo').insertAfter('.logo_wrap');
 			$('#nav_area').insertBefore('header');
 
 		} else if(window_width > 800 && window_width <= 1000){
-			// $('.main_logo').insertBefore('.head_info');
+			$('.main_logo').prependTo('.toggle_right_nav');
 			$('#nav_area').insertAfter('header');
 			
 		} else {
-			// $('.main_logo').insertBefore('.head_info');
+			$('.main_logo').prependTo('.toggle_right_nav');
 			$('#nav_area').insertAfter('header');
 		}
 	}
