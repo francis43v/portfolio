@@ -272,8 +272,40 @@ document.querySelectorAll('[skill-tabs]').forEach(tabsWrapper => {
 });
 
 
+ 
+const sections = document.querySelectorAll("#banner, #main_area, #bottom1, #bottom2");
+const navLinks = document.querySelectorAll(".page_nav ul li");
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.3 // 60% of section visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Remove current class
+      navLinks.forEach(li => li.classList.remove("current_page_item"));
+
+      // Add current class to the matching link
+      const activeLink = document.querySelector(`.page_nav ul li a[href="#${entry.target.id}"]`);
+      if (activeLink) {
+        activeLink.parentElement.classList.add("current_page_item");
+      }
+    }
+  });
+}, options);
+
+// Observe each section
+sections.forEach(section => observer.observe(section));
 
 
  
+
+
+			
+
+
 
 });

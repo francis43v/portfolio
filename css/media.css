@@ -123,6 +123,7 @@ and (max-width : 1000px) {
   .project_boxes {   grid-template-columns: repeat(2, 1fr); }
 
 
+  .skills_boxes {    grid-template-columns: repeat(2, 1fr); }
 
   
   .tabs { flex-direction: column; }
@@ -182,6 +183,9 @@ and (max-width : 800px) {
   .btm1_info { margin-bottom: 90px; }
   
   .project_boxes {   grid-template-columns: repeat(1, 1fr); }
+
+  
+  .skills_boxes {    grid-template-columns: repeat(1, 1fr); }
 
 .project_boxes section .project_info { justify-content: center; flex-direction: column; text-align: center; align-items: center; }
 
