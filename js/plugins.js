@@ -102,6 +102,12 @@ $(document).ready(function(){
 
 		swap_this();
 
+		
+		
+		if(window_width > 1000){ addAnimation(); }
+
+		
+
 		if(window_width > 800) {
 			$(".nav_toggle_button").removeClass('active');
 			$(".hamburger").removeClass("is-active");
@@ -273,7 +279,7 @@ document.querySelectorAll('[skill-tabs]').forEach(tabsWrapper => {
 
 
  
-const sections = document.querySelectorAll("#banner, #main_area, #bottom1, #bottom2");
+const sections = document.querySelectorAll("#banner, #middle, #main_area, #bottom2");
 const navLinks = document.querySelectorAll(".page_nav ul li");
 
 const options = {
@@ -302,9 +308,28 @@ sections.forEach(section => observer.observe(section));
 
 
  
+function addAnimation() {
+  const projectItems = [...document.querySelectorAll('.project_boxes section')];
 
+   projectItems.forEach((item, index) => {
+    item.classList.remove('wow', 'fadeInUp'); // clean up old
+    item.removeAttribute('data-wow-duration');
+    item.removeAttribute('data-wow-delay');
 
-			
+    item.classList.add('wow', 'fadeInUp');
+    item.setAttribute('data-wow-delay', `${index * 250}ms`);
+    item.setAttribute('data-wow-duration', `1500ms`);
+  });
+
+  // Re-init WOW.js to detect new elements
+  if (typeof WOW === 'function') {
+    new WOW().init();
+  }
+}
+
+ if(window_width > 1000){ addAnimation(); }
+
+			 
 
 
 

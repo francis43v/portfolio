@@ -227,6 +227,12 @@ and (max-width : 600px) {
 .contact-section { margin: 0; }
 .contact-section h2 { font-size: 2.1rem; }
 
+ 
+    .contact-section { margin: 30px 15px; padding: 30px 15px; }
+  
+
+
+
   /*Footer Area*/
 
 }
