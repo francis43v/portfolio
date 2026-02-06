@@ -279,13 +279,13 @@ document.querySelectorAll('[skill-tabs]').forEach(tabsWrapper => {
 
 
  
-const sections = document.querySelectorAll("#banner, #middle, #main_area, #bottom2");
+const sections = document.querySelectorAll("#banner, #middle, #bottom2, #bottom5");
 const navLinks = document.querySelectorAll(".page_nav ul li");
 
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.3 
+  threshold: 0.1 
 };
 
 const observer = new IntersectionObserver((entries) => {
