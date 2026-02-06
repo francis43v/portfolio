@@ -1,14 +1,15 @@
- 
+
+
+
+.wow,
+.animated { animation: none !important;  }
 
 
  #banner, 
- #middle,
  #bottom1,
- #bottom2  { padding: 0 ; }
+ #bottom2,   
+ #bottom3,   
+ #bottom4   { padding: 0 ;  display: none;}  
 
 
-
-.bnr_con,
-.middle_con,
-.btm1_con {min-height: 0; padding:   0   ; display: block;} 
- 
+    .middle_con { padding-top: 100px; } 

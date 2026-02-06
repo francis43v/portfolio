@@ -94,24 +94,26 @@ and (max-width : 1024px) {
 
 @media only screen
 and (max-width : 1000px) {
+  
+  
  
   /*Header Area*/
 
-  .main_logo { max-width: 200px; position: relative; }
+  .main_logo {  position: relative;  }
   /*Nav Area*/
 
   /*Banner Area*/
 
   .bnr_con { display: block; }
 
-  .bnr_info_con { max-width: 100%; text-align: center; }
+  .bnr_info_con { max-width: 100%; width: 100%; text-align: center; }
 
   .bnr_info a { margin: 20px auto; }
 
   .social_links { margin: 20px auto; }
   .social_links ul { justify-content: center; }
 
-  .bnr_profile { max-width: 100%; }
+  .bnr_profile { width: 100%; aspect-ratio: 1/1; margin: 100px auto 0;}
 
   /*Middle Area*/
 
@@ -134,11 +136,15 @@ and (max-width : 1000px) {
 
   /*Footer Area*/
 
-  .footer_top_con { flex-direction: column; }
+  .footer_top_con { flex-direction: column;padding: 120px 0; }
 .footer_info { max-width: fit-content; width: 100%; margin: 20px auto 0; text-align: center; }
-.footer_info ul { text-align: left; max-width: fit-content; margin: 0 auto; }
 
+.footer_contact  { max-width: 100%;   width: 100%; justify-content: space-evenly; flex-wrap: wrap;  } 
+.footer_contact li { text-align: center; }
+.footer_contact li::before { margin: 0 auto 25px; }
 .footer_art { max-width: 330px; width: 100%; }
+
+
 
 
 
@@ -146,10 +152,18 @@ and (max-width : 1000px) {
 
 @media only screen
 and (max-width : 800px) {
-  /*Header Area*/
 
-  
-.main_logo h3 { position: static; }
+  .mb-hide { display: none; }
+
+
+  :root{
+    --Heading1: 2.5rem;
+  }
+
+
+  /*Header Area*/
+.main_logo { padding: 0;}
+.main_logo h3 { position: static;  color: #fff; font-size: 1rem; }
 
   /*Nav Area*/
 
@@ -179,8 +193,7 @@ and (max-width : 800px) {
   /*Main Area*/
 
   /*Bottom Area*/
-
-  .btm1_info { margin-bottom: 90px; }
+ 
   
   .project_boxes {   grid-template-columns: repeat(1, 1fr); }
 
@@ -190,12 +203,21 @@ and (max-width : 800px) {
 .project_boxes section .project_info { justify-content: center; flex-direction: column; text-align: center; align-items: center; }
 
 
+.btm2_info { margin-bottom: 100px; }
 
-  .tabs-btn { max-width: 100%; } 
+.btm3_con { padding: 80px 0; padding-left: 0; }
+.btm3_info::before { inset: 12px; }
 
-  .skill-info { padding: 0; }
+.btm3_info { padding: 80px 30px; text-align: center; }
+.btm3_info a { margin-inline: auto; }
+ .btm3_info p { font-size: 1.3rem;}
+ 
 
   .achievements_info ul { flex-direction: column; }
+
+  .btm_contact { padding: 0; }
+  
+  .contact-section {  width: 100%; }
 
 
 
@@ -228,13 +250,13 @@ and (max-width : 600px) {
 .contact-section h2 { font-size: 2.1rem; }
 
  
-    .contact-section { margin: 30px 15px; padding: 30px 15px; }
+    .contact-section { margin: 0; padding: 30px 25px; }
   
 
 
 
   /*Footer Area*/
-
+   .footer_contact { flex-direction: column; }
 }
 
 @media only screen

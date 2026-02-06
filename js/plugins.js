@@ -285,7 +285,7 @@ const navLinks = document.querySelectorAll(".page_nav ul li");
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.3 // 60% of section visible
+  threshold: 0.3 
 };
 
 const observer = new IntersectionObserver((entries) => {
